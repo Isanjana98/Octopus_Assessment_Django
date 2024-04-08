@@ -1,0 +1,45 @@
+{% for school in schools %}
+  <tr>
+    <td>{{ school.id }}</td>
+    <td>{{ school.name }}</td>
+    <td>{{ school.class_id }}</td>
+  </tr>
+{% endfor %}
+
+{% for class in classes %}
+  <tr>
+    <td>{{ class.id }}</td>
+    <td>{{ class.name }}</td>
+    <td>{{ class.assessment_area_id }}</td>
+  </tr>
+{% endfor %}
+
+{% for assessment_area in assessment_areas %}
+  <tr>
+    <td>{{ assessment_area.id }}</td>
+    <td>{{ assessment_area.name }}</td>
+  </tr>
+{% endfor %}
+
+{% for student in students %}
+  <tr>
+    <td>{{ student.id }}</td>
+    <td>{{ student.fullname }}</td>
+  </tr>
+{% endfor %}
+
+{% for answer in answers %}
+  <tr>
+    <td>{{ answer.id }}</td>
+    <td>{{ answer.answers }}</td>
+    <td>{{ answer.summary }}</td>
+  </tr>
+{% endfor %}
+
+{% for award in awards %}
+  <tr>
+    <td>{{ award.id }}</td>
+    <td>{{ award.name }}</td>
+    <td>{{ award.subject_id }}</td>
+  </tr>
+{% endfor %}

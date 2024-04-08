@@ -10,7 +10,6 @@ $ cd practicaltest -> cd Scripts -> ./activate.bat
 
 Then install the dependencies:
 
-(env)$ pip install -r requirements.txt
 
 (env)$ cd interviewassessment
 (env)$ py manage.py runserver
